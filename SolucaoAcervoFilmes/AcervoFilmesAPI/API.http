@@ -1,0 +1,68 @@
+### raiz da aplicação
+GET http://localhost:5006
+
+### cadastrando brokeback mountain
+POST http://localhost:5006/api/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "brokeback mountain",
+    "nota" : 10,
+    "diretor" : "ang lee"
+}
+
+### cadastrando rosemary's baby
+POST http://localhost:5006/api/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "rosemary's baby",
+    "nota" : 10,
+    "diretor" : "roman polanski"
+}
+
+### cadastrando mary is happy, mary is happy
+POST http://localhost:5006/api/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "mary is happy, mary is happy",
+    "nota" : 9,
+    "diretor" : "nawapol thamrongrattanarit"
+}
+
+### cadastrando when harry met sally...
+POST http://localhost:5006/api/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "when harry met sally",
+    "nota" : 10,
+    "diretor" : "rob reiner"
+}
+
+### cadastrando filme falso
+POST http://localhost:5006/api/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "everything is romantic",
+    "nota" : 3,
+    "diretor" : "charli xcx"
+}
+
+### listando
+GET http://localhost:5006/api/listar/
+
+### alterando
+PUT http://localhost:5006/api/alterar/0febea70-805b-4c02-9882-e53ecf2bc726
+Content-Type: application/json
+
+{
+    "nome" : "everything is romantic ft. carolina",
+    "nota" : 10,
+    "diretor" : "charli xcx"
+}
+
+### deletando
+DELETE http://localhost:5006/api/deletar/0febea70-805b-4c02-9882-e53ecf2bc726
