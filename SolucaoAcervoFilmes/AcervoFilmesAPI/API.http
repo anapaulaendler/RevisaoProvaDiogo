@@ -66,3 +66,13 @@ Content-Type: application/json
 
 ### deletando
 DELETE http://localhost:5006/api/deletar/0febea70-805b-4c02-9882-e53ecf2bc726
+
+### cadastrando coisa aleatoria
+POST http://localhost:5006/api/cadastrar
+Content-Type: application/json
+
+{
+    "nome" : "gay",
+    "nota" : 10,
+    "diretor" : "ang lee"
+}

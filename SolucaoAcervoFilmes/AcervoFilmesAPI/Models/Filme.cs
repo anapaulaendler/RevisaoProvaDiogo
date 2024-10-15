@@ -1,4 +1,4 @@
-namespace API.Models;
+namespace AcervoFilmesAPI.Models;
 
 public class Filme
 {
